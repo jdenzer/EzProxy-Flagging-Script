@@ -1,4 +1,4 @@
-# EzProxy IEEE-SciHub-Flag
+# EzProxy IEEE-Flagging-Script
 
 Ezproxy IEEE-SciHub-Flag is a Windows Powershell script written using PS version 5. The script does the following:
 
