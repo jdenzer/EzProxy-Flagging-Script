@@ -33,7 +33,7 @@ Make sure the _ezproxypath_ is pointing to your ezproxy home directory. The othe
 ### **Modify the psconfig.ini**
 
 > ### **[General]** 
-> - IEEEflag=ARNT8722537-1085 ***Default IEEE flag, do not change unless IEEE has updated their flag***
+> - IEEEflag=xxxx ***Default IEEE flag, do not change unless IEEE has updated their flag***
 > - ezproxyservicename =EZproxy ***Default EzProxy Service name. Make sure the windows service***                                      
 > ***for ezproxy is not different***
 > 
