@@ -1,10 +1,10 @@
-# EzProxy IEEE-Flagging-Script
+# EzProxy Flagging-Script
 
-Ezproxy IEEE-SciHub-Flag is a Windows Powershell script written using PS version 5. The script does the following:
+Ezproxy SciHub-Flag is a Windows Powershell script written using PS version 5. The script does the following:
 
-- Identify log entry with IEEE unique flag
-- Add the IP making attempt to IEEE to EzProxy IP blacklist
-- Add the user account making attempt to IEEE to EzProxy users blacklist
+- Identify log entry with unique flag
+- Add the IP making attempt to EzProxy IP blacklist
+- Add the user account making attempt to EzProxy users blacklist
 - Send email notification for both breaching IP list and user list
 
 ## Requirements
@@ -33,7 +33,7 @@ Make sure the _ezproxypath_ is pointing to your ezproxy home directory. The othe
 ### **Modify the psconfig.ini**
 
 > ### **[General]** 
-> - IEEEflag=xxxx ***Default IEEE flag, do not change unless IEEE has updated their flag***
+> - IEEEflag=xxxx ***Default flag***
 > - ezproxyservicename =EZproxy ***Default EzProxy Service name. Make sure the windows service***                                      
 > ***for ezproxy is not different***
 > 
@@ -51,8 +51,8 @@ Make sure the _ezproxypath_ is pointing to your ezproxy home directory. The othe
 > - fromemail =***admin@mail.edu Mail account that receiver will see in email***
 > 
 > ### **[MailMSGS]** 
-> - IPsubject =Rejected IP for - IEEE Flag ***Subject line for Rejected IP outgoing mail***
-> - USERSsubject =Deny Users for IEEE Hack ***Subject line for Denied User outgoing mail***
+> - IPsubject =Rejected IP for -  Flag ***Subject line for Rejected IP outgoing mail***
+> - USERSsubject =Deny Users for  Hack ***Subject line for Denied User outgoing mail***
 > - IPToEmails = admin@mail.edu, admin@mail.org ***Email addresses to send Rejected IP email***                             
 > ***multiple accounts can be added using a coma***
 > - USERSToEmails=admin@mail.eduEmail ***addresses to send Denied User email multiple***                                                       
@@ -60,7 +60,7 @@ Make sure the _ezproxypath_ is pointing to your ezproxy home directory. The othe
 
 ## **Installation**
 
-Copy the _IEEEFlag.ps1_ and _psconfig.ini_ to a directory on the Windows server. The server&#39;s ezproxy directory is best.
+Copy the _EzProxyFlag.ps1_ and _psconfig.ini_ to a directory on the Windows server. The server&#39;s ezproxy directory is best.
 
 ## **Create New Scheduled Task in Task Manager**
 **Open Task Scheduler**
@@ -76,7 +76,7 @@ Copy the _IEEEFlag.ps1_ and _psconfig.ini_ to a directory on the Windows server.
  - Program/script: Powershell.exe
 
 **Set Argument**  
- - c:\ezproxy\ IEEEFlag.ps1 "c:\ezproxy\psconfig.ini"
+ - c:\ezproxy\ EzProxyFlag.ps1 "c:\ezproxy\psconfig.ini"
 
 ***Note:***
 You need to set the ExecutionPolicy to run Powershell script in Powershell once
