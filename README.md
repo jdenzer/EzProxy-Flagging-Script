@@ -26,38 +26,36 @@ The script uses the following paths in the psconfig.ini file.
 Make sure the _ezproxypath_ is pointing to your ezproxy home directory. The others two paths can be changed or left as default. The script will check for them and create them if needed.
 
 > ### **[Paths]**
-> ezproxypath =C:\ezproxy\   ***Default EzProxy Path*** 
-> ezproxylogfilespath =C:\EzProxyLogFiles\ 
-> ezproxyIEEEflagpath =C:\EzProxyLogFiles\ieeeflag\
-
-
+> - ezproxypath =C:\ezproxy\   ***Default EzProxy Path*** 
+> - ezproxylogfilespath =C:\EzProxyLogFiles\ 
+> - ezproxyIEEEflagpath =C:\EzProxyLogFiles\ieeeflag\
 
 ### **Modify the psconfig.ini**
 
 > ### **[General]** 
-> IEEEflag=ARNT8722537-1085 ***Default IEEE flag, do not change unless IEEE has updated their flag***
->ezproxyservicename =EZproxy ***Default EzProxy Service name. Make sure the windows service***                                      
+> - IEEEflag=ARNT8722537-1085 ***Default IEEE flag, do not change unless IEEE has updated their flag***
+> - ezproxyservicename =EZproxy ***Default EzProxy Service name. Make sure the windows service***                                      
 > ***for ezproxy is not different***
 > 
 > ### **[Filenames]**
-> shibuserfile=shibuser.txt ***This is the blocked user include file for***
+> - shibuserfile=shibuser.txt ***This is the blocked user include file for***
 > ***ezproxy. The file includes*** ***&#39;If auth:userid eq &quot;wzhu12&quot;; Deny deny.htm&#39; entries.***
-> rejectedipfile=rejectip.txt ***This is the blocked ip include file for ezproxy. The file includes &#39;_If auth:userid eq &quot;wzhu12&quot;; Deny deny.htm&#39;_ entries.*** 
-> ezproxylogfile=ezproxy.log ***Default ezproxy log file, do not change. tempoutfile =out.txt Temp file for storing compromised entries.***
+> - rejectedipfile=rejectip.txt ***This is the blocked ip include file for ezproxy. The file includes &#39;_If auth:userid eq &quot;wzhu12&quot;; Deny deny.htm&#39;_ entries.*** 
+> - ezproxylogfile=ezproxy.log ***Default ezproxy log file, do not change. tempoutfile =out.txt Temp file for storing compromised entries.***
 > 
 > ### **[MailSettings]** 
-> smtp =smtp.gmail.com ***Outgoing SMTP mail server***
-> port =587 ***Outgoing SMTP mail server port***
-> account =xxx@mail.edu ***Mail account for sending outgoing mail***
-> password =xxxxx ***Mail account password***
-> fromemail =***admin@mail.edu Mail account that receiver will see in email***
+> - smtp =smtp.gmail.com ***Outgoing SMTP mail server***
+> - port =587 ***Outgoing SMTP mail server port***
+> - account =xxx@mail.edu ***Mail account for sending outgoing mail***
+> - password =xxxxx ***Mail account password***
+> - fromemail =***admin@mail.edu Mail account that receiver will see in email***
 > 
 > ### **[MailMSGS]** 
-> IPsubject =Rejected IP for - IEEE Flag ***Subject line for Rejected IP outgoing mail***
-> USERSsubject =Deny Users for IEEE Hack ***Subject line for Denied User outgoing mail***
-> IPToEmails = admin@mail.edu, admin@mail.org ***Email addresses to send Rejected IP email***                             
+> - IPsubject =Rejected IP for - IEEE Flag ***Subject line for Rejected IP outgoing mail***
+> - USERSsubject =Deny Users for IEEE Hack ***Subject line for Denied User outgoing mail***
+> - IPToEmails = admin@mail.edu, admin@mail.org ***Email addresses to send Rejected IP email***                             
 > ***multiple accounts can be added using a coma***
-> USERSToEmails=admin@mail.eduEmail ***addresses to send Denied User email multiple***                                                       
+> - USERSToEmails=admin@mail.eduEmail ***addresses to send Denied User email multiple***                                                       
 > ***accounts can be added using a coma***
 
 ## **Installation**
