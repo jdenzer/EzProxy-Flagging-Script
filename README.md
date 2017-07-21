@@ -1,6 +1,6 @@
 # EzProxy Flagging-Script
 
-Ezproxy SciHub-Flag is a Windows Powershell script written using PS version 5. The script does the following:
+Ezproxy Flagging-Script is a Windows Powershell script written using PS version 5. The script does the following:
 
 - Identify log entry with unique flag
 - Add the IP making attempt to EzProxy IP blacklist
